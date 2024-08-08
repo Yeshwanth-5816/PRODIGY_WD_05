@@ -1,0 +1,90 @@
+body {
+    background: #2c3e50; /* Darker, more modern background color */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Sleek, modern font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque container */
+    max-width: 400px;
+    padding: 30px; /* Increased padding for a more spacious look */
+    border-radius: 20px; /* Softer rounded corners */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Slightly thicker border */
+}
+
+h2 {
+    color: #1abc9c; /* Fresh, vibrant color for the title */
+    margin-bottom: 20px;
+    font-size: 28px; /* Increased font size */
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px; /* Softer rounded corners */
+    border: 2px solid #1abc9c; /* Matching border color */
+    margin-top: 20px;
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+button {
+    background: #e74c3c; /* Bright red for the button */
+    color: white;
+    padding: 12px; /* Larger padding for a more prominent button */
+    border: none;
+    border-radius: 15px; /* Softer rounded corners */
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px; /* Larger button width */
+    font-size: 16px; /* Larger font size */
+}
+
+button:hover {
+    background: #c0392b; /* Darker shade on hover */
+}
+
+#weather-icon {
+    width: 150px; /* Adjusted width for better visibility */
+    height: 150px;
+    margin: 20px auto; /* Added margin to separate the icon from text */
+    display: none;
+    border-radius: 50%; /* Circular icon */
+    border: 4px solid #1abc9c; /* Matching border color */
+}
+
+#temp-div, #weather-info {
+    font-size: 20px; /* Increased font size */
+    color: #34495e; /* Darker, more elegant color */
+    margin-top: 10px;
+}
+
+#hourly-forecast {
+    margin-top: 40px; /* Added margin to separate the forecast section */
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #2c3e50; /* Matching text color with the background */
+}
+
+.hourly-item img {
+    width: 40px; /* Slightly larger icons */
+    height: 40px;
+    margin-bottom: 5px;
+}
